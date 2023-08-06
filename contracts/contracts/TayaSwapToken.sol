@@ -4,7 +4,7 @@
   import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
   import "@openzeppelin/contracts/access/Ownable.sol";
 
-  contract CryptoDevToken is ERC20, Ownable {
+  contract TAYASWAPTOKEN is ERC20, Ownable {
     
       // the max total supply is 10000 for TayaSwap Tokens
       uint256 public constant maxTotalSupply = 1000000 * 10**18;
