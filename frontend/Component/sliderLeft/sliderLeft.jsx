@@ -45,7 +45,7 @@ function SliderLeft() {
 
    <Drawer isOpen={isOpen} placement='left'     onClose={onClose}>
     <DrawerOverlay />
-    <DrawerContent style={{backgroundColor:"rgba(255, 255, 255, 0.90)"}}>
+    <DrawerContent style={{backgroundColor:"#FFFFFF"}}>
     {/* <DrawerCloseButton /> */}
       <DrawerHeader style={{fontWeight:"700", fontSize:'1.6rem' , color:"#1C1C1C"}}>
 
@@ -59,22 +59,22 @@ function SliderLeft() {
 
        Taya Swap  
       </DrawerHeader>
-      <DrawerBody style={{backgroundColor:"rgba(255, 255, 255, 0.90);"}} >
+      <DrawerBody style={{backgroundColor:"#FFFFFF"}} >
         <VStack alignItems={'flex-start'}>
-          <Button   onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"}  style={{  transitionDelay: '1s' , fontWeight:'600' }} >
+          <Button   onClick={onClose} color={"#494949"}  variant={"ghost"}  style={{  transitionDelay: '1s' , fontWeight:'600' }} >
            <BiSolidDashboard style={{marginRight:'1rem'}} />  <Link href="/dashboard">Dashboard</Link>
           </Button>
-          <Button  onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"} style={{  transitionDelay:' 1s' , fontWeight:'600' }}  >
+          <Button  onClick={onClose} color={"#494949"}  variant={"ghost"} style={{  transitionDelay:' 1s' , fontWeight:'600' }}  >
             <MdSwapHorizontalCircle style={{marginRight:'1rem'}} /> <Link href="/swap">Swap</Link>
           </Button>
-          <Button  onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+          <Button  onClick={onClose} color={"#494949"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
            <GiWhirlpoolShuriken style={{marginRight:'1rem'}} />  <Link href="/pools">Pools </Link>
           </Button>
-          <Button  onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+          <Button  onClick={onClose} color={"#494949"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
             <AiOutlineLock style={{marginRight:'1rem'}} /> <Link href="/upload">Lockdrop</Link>
           </Button>
 
-          <Button  onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+          <Button  onClick={onClose} color={"#494949"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
            <GiStoneBridge style={{marginRight:'1rem'}} />  <Link href="/upload">Bridge</Link>
           </Button>
 
@@ -95,11 +95,11 @@ function SliderLeft() {
         <HStack pos={'absolute'} bottom={'10'} left={'0'}  w={'full'} justifyContent={'space-around'} p={'0 1rem'} >
 
        
-     <Link href={'/login'}  > <BsLinkedin size={30} style={{color:'#1C1C1C'}} /></Link>
+     <Link href={'/login'}  > <BsLinkedin size={25} style={{color:'#494949'}} /></Link>
 
-     <Link href={'/signup'} > <BsTwitter  size={30}  style={{color:'#1C1C1C'}} /> </Link>
+     <Link href={'/signup'} > <BsTwitter  size={25}  style={{color:'#494949'}} /> </Link>
 
-     <Link href={'/signup'} > <BsDiscord   size={30}  style={{color:'#1C1C1C'}} /> </Link>
+     <Link href={'/signup'} > <BsDiscord   size={25}  style={{color:'#494949'}} /> </Link>
    
         </HStack>
      
