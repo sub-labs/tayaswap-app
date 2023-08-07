@@ -45,7 +45,7 @@ function SliderLeft() {
 
    <Drawer isOpen={isOpen} placement='left'     onClose={onClose}>
     <DrawerOverlay />
-    <DrawerContent>
+    <DrawerContent style={{backgroundColor:"#F2F2F2 "}}>
     {/* <DrawerCloseButton /> */}
       <DrawerHeader style={{fontWeight:"700", fontSize:'1.6rem' , color:"#1C1C1C"}}>
 
@@ -59,7 +59,7 @@ function SliderLeft() {
 
        Taya Swap  
       </DrawerHeader>
-      <DrawerBody>
+      <DrawerBody style={{backgroundColor:"#F2F2F2 "}} >
         <VStack alignItems={'flex-start'}>
           <Button   onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay: '1s' , fontWeight:'600' }} >
            <BiSolidDashboard style={{marginRight:'1rem'}} />  <Link href="/dashboard">Dashboard</Link>
