@@ -59,26 +59,26 @@ function SliderLeft() {
 
        Taya Swap  
       </DrawerHeader>
-      <DrawerBody style={{backgroundColor:"#F2F2F2 "}} >
+      <DrawerBody style={{backgroundColor:"rgba(255, 255, 255, 0.90);"}} >
         <VStack alignItems={'flex-start'}>
-          <Button   onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay: '1s' , fontWeight:'600' }} >
+          <Button   onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"}  style={{  transitionDelay: '1s' , fontWeight:'600' }} >
            <BiSolidDashboard style={{marginRight:'1rem'}} />  <Link href="/dashboard">Dashboard</Link>
           </Button>
-          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"} style={{  transitionDelay:' 1s' , fontWeight:'600' }}  >
+          <Button  onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"} style={{  transitionDelay:' 1s' , fontWeight:'600' }}  >
             <MdSwapHorizontalCircle style={{marginRight:'1rem'}} /> <Link href="/swap">Swap</Link>
           </Button>
-          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+          <Button  onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
            <GiWhirlpoolShuriken style={{marginRight:'1rem'}} />  <Link href="/pools">Pools </Link>
           </Button>
-          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+          <Button  onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
             <AiOutlineLock style={{marginRight:'1rem'}} /> <Link href="/upload">Lockdrop</Link>
           </Button>
 
-          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+          <Button  onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
            <GiStoneBridge style={{marginRight:'1rem'}} />  <Link href="/upload">Bridge</Link>
           </Button>
 
-          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+          <Button  onClick={onClose} color={"rgba(28, 28, 28, 0.8)"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
            <BsBlockquoteLeft style={{marginRight:'1rem'}} />  <Link href="/upload">Lattery</Link>
           </Button>
 
