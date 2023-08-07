@@ -86,13 +86,13 @@ function SliderLeft() {
         </VStack>
 
 {/* footer of slider  */}
-    <Container  pos={'absolute'} bottom={'71'} left={'0'} margin={'0 0 0.8rem 0'} w={'full'}   display="flex"
+    <Container  pos={'absolute'} bottom={'71'} left={'0'} margin={'0 0 0.5rem 0'} w={'full'}   display="flex"
       alignItems="center"
       justifyContent="center" >
     <Text style={{fontWeight:'700' , color:'#959595'}} >SubLabs | Peckshield</Text>
     </Container>
    
-        <HStack pos={'absolute'} bottom={'10'} left={'0'}  w={'full'} justifyContent={'space-around'} p={'0 0.8rem'} >
+        <HStack pos={'absolute'} bottom={'10'} left={'0'}  w={'full'} justifyContent={'space-around'} p={'0 0.5rem'} >
 
        
      <Link href={'/login'}  > <BsLinkedin size={25} style={{color:'#494949'}} /></Link>
