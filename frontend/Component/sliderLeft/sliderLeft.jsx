@@ -11,17 +11,25 @@ import {
     Button,
     useDisclosure,
     VStack,
-    HStack
+   Text,
+    HStack,
+    Container
   } from '@chakra-ui/react'
 
 import Link from 'next/link'
+import Image from 'next/image'
+
+import icon  from "../../public/Group 78.svg"
 
 
-  import {BiMenuAltLeft} from "react-icons/bi"
-  
+  import {BiMenuAltLeft , BiSolidDashboard , BiLogoLinkedin} from "react-icons/bi"
+  import {MdSwapHorizontalCircle} from "react-icons/md"
+  import {GiWhirlpoolShuriken , GiStoneBridge} from 'react-icons/gi'
+ import {BsBlockquoteLeft ,BsTwitter , BsDiscord, BsLinkedin } from "react-icons/bs"
+  import  {AiOutlineLock} from "react-icons/ai"
 
   const transtionStyleProperty = {
-    transition : "all 1s"
+    transition : "all 1.4s"
   }
 
 function SliderLeft() {
@@ -38,38 +46,64 @@ function SliderLeft() {
    <Drawer isOpen={isOpen} placement='left'     onClose={onClose}>
     <DrawerOverlay />
     <DrawerContent>
-    <DrawerCloseButton />
-      <DrawerHeader>
-       Taya Swap
+    {/* <DrawerCloseButton /> */}
+      <DrawerHeader style={{fontWeight:"700", fontSize:'1.6rem' , color:"#1C1C1C"}}>
+
+      <Image
+      priority
+      style={{display:'inline' , margin:'0.2rem 1rem 0 0 ' , height:'2rem'}}
+      src={icon}
+      alt="Follow us on Twitter"
+    />
+
+
+       Taya Swap  
       </DrawerHeader>
       <DrawerBody>
         <VStack alignItems={'flex-start'}>
-          <Button   onClick={onClose} colorScheme={'purple'} variant={"ghost"}  style={{textDecoration:'underline' , transitionDelay: '1s'}} >
-            <Link href="/">Home</Link>
+          <Button   onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay: '1s' , fontWeight:'600' }} >
+           <BiSolidDashboard style={{marginRight:'1rem'}} />  <Link href="/dashboard">Dashboard</Link>
           </Button>
-          <Button  onClick={onClose} colorScheme={'purple'} variant={"ghost"} style={{textDecoration:'underline' , transitionDelay:' 1s'}}  >
-            <Link href="/video">Video</Link>
+          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"} style={{  transitionDelay:' 1s' , fontWeight:'600' }}  >
+            <MdSwapHorizontalCircle style={{marginRight:'1rem'}} /> <Link href="/swap">Swap</Link>
           </Button>
-          <Button  onClick={onClose} colorScheme={'purple'} variant={"ghost"}  style={{textDecoration:'underline' , transitionDelay:' 1s'}} >
-            <Link href="/video?category=free">Free Video </Link>
+          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+           <GiWhirlpoolShuriken style={{marginRight:'1rem'}} />  <Link href="/pools">Pools </Link>
           </Button>
-          <Button  onClick={onClose} colorScheme={'purple'} variant={"ghost"}  style={{textDecoration:'underline' , transitionDelay:' 1s'}} >
-            <Link href="/upload">Upload Video</Link>
+          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+            <AiOutlineLock style={{marginRight:'1rem'}} /> <Link href="/upload">Lockdrop</Link>
           </Button>
+
+          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+           <GiStoneBridge style={{marginRight:'1rem'}} />  <Link href="/upload">Bridge</Link>
+          </Button>
+
+          <Button  onClick={onClose} color={"#1C1C1C"}  variant={"ghost"}  style={{  transitionDelay:' 1s' , fontWeight:'600' }} >
+           <BsBlockquoteLeft style={{marginRight:'1rem'}} />  <Link href="/upload">Lattery</Link>
+          </Button>
+
 
         </VStack>
 
-        <HStack pos={'absolute'} bottom={'10'} left={'0'}  w={'full'} justifyContent={'space-evenly'}>
+{/* footer of slider  */}
+    <Container  pos={'absolute'} bottom={'71'} left={'0'} margin={'0 0 1rem 0'} w={'full'}   display="flex"
+      alignItems="center"
+      justifyContent="center" >
+    <Text style={{fontWeight:'700' , color:'#959595'}} >SubLabs | Pechshield</Text>
+    </Container>
+   
+        <HStack pos={'absolute'} bottom={'10'} left={'0'}  w={'full'} justifyContent={'space-around'} p={'0 1rem'} >
 
-          <Button colorScheme='purple'>
-            <Link href={'/login'} >Login</Link>
-          </Button>
+       
+     <Link href={'/login'}  > <BsLinkedin size={30} style={{color:'#1C1C1C'}} /></Link>
 
-          
-          <Button colorScheme='purple' variant={'outline'}>
-            <Link href={'/signup'} >SignUp</Link>
-          </Button>
+     <Link href={'/signup'} > <BsTwitter  size={30}  style={{color:'#1C1C1C'}} /> </Link>
+
+     <Link href={'/signup'} > <BsDiscord   size={30}  style={{color:'#1C1C1C'}} /> </Link>
+   
         </HStack>
+     
+       
       </DrawerBody>
       </DrawerContent> 
         </Drawer>
