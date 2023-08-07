@@ -45,7 +45,7 @@ function SliderLeft() {
 
    <Drawer isOpen={isOpen} placement='left'     onClose={onClose}>
     <DrawerOverlay />
-    <DrawerContent style={{backgroundColor:"#F2F2F2 "}}>
+    <DrawerContent style={{backgroundColor:"rgba(255, 255, 255, 0.90)"}}>
     {/* <DrawerCloseButton /> */}
       <DrawerHeader style={{fontWeight:"700", fontSize:'1.6rem' , color:"#1C1C1C"}}>
 
