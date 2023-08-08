@@ -95,11 +95,11 @@ function SliderLeft() {
         <HStack pos={'absolute'} bottom={'10'} left={'0'}  w={'full'} justifyContent={'space-around'} p={'0 0.5rem'} >
 
        
-     <Link href={'/login'}  > <BsLinkedin size={25} style={{color:'#494949'}} /></Link>
+     <Link href={'https://twitter.com/tayaswap'}  > <BsLinkedin size={25} style={{color:'#494949'}} /></Link>
 
-     <Link href={'/signup'} > <BsTwitter  size={25}  style={{color:'#494949'}} /> </Link>
+     <Link href={'https://twitter.com/tayaswap'} > <BsTwitter  size={25}  style={{color:'#494949'}} /> </Link>
 
-     <Link href={'/signup'} > <BsDiscord   size={25}  style={{color:'#494949'}} /> </Link>
+     <Link href={'https://twitter.com/tayaswap'} > <BsDiscord   size={25}  style={{color:'#494949'}} /> </Link>
    
         </HStack>
      
